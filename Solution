@@ -1,0 +1,12 @@
+class Solution {
+    public int solution(int X, int Y, int D) {
+       if (Y==0 || X==Y) return 0;
+       int cpt=1;
+       int res=X+D;
+       while(res<Y){
+           cpt++;
+           res+=D;
+    }
+    return cpt;
+}
+}
